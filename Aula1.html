@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leia o alerta!</title>
+    <script>
+
+// O meta charset UTF8 é uma Tag que serve para tornar utilizável alguns caracteres especiais como: ç,á,ã,â...
+
+// O Tag meta name = viewport serve para trabalhar conteúdos responsivos, ou seja, quando abro uma aba e coloco-a em janela reduzida e altero o tamanho dela alterando o layout do texto, isso se refere à RESPONSIVO   
+
+//O comando ALERT fica dentro das Tags Script e serve como um comando para exeutar uma ação
+
+//Usar o ";" para finalizar o comando é importante no momento que for utilizado o JavaScript! Portanto devo criar o Hábito de usá-lo
+
+//";" utilizado como no exemplo abaixo para executar em JAVA
+
+    let janela= window.prompt('Numero da gratificação!');
+    janela=parseInt(janela);
+
+        let bonus= '25 reais de bonificação' ;
+        
+        let doce = 'Mais um chocolate Ouro Branco da apex ....';
+
+        alert('BuUUUh Aperte o OK');
+
+       document.write('<p> Parabéns</p> Você chegou até aqui!' + '<p>' + bonus + '</p>' + '<p>' + doce + '</p>' +'<p>' + janela + ' Gratificação ' + '</p>' ); 
+       
+     if (janela >= 35){
+         document.write( ' bonifiacação liberada ');
+     } else {
+         document.write ( ' Bonificação não atingida' );
+     };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
