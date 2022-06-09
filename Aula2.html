@@ -1,0 +1,66 @@
+<html>
+    <meta charset="UTF8">
+    <script>
+
+//'&&' operador 'and' ou simplesmente 'ee', adiciona mais de uma condição ao resultado.
+//'||' operador 'or' ou simplesmente 'ou', adiciona mais de uma condição, mas com resultado relativo aos valores do problema
+
+//Exercicio Condição Aninhada(1): Criar um programa, onde se o cargo for vendedor deve-se imprimir valor=2000 na tela, se for gerente=3000 se não for definido imprimir=0; 
+
+let cargo = 'vendedor';
+
+if (cargo == 'vendedor'){
+    document.write(2000);
+} else if (cargo == 'gerente'){
+    document.write(3000);
+} else{
+    document.write( 0 )
+}
+
+//Exercício 1
+
+
+//Exercicio Media(2): Criar 2 variaveis notas (nota1 e nota2) imprimir a media. Media calculada dividindo a soma total pela quantidade de nota, no nosso caso somaTotal1/2;
+
+//exercício 2
+let nota1=5
+let nota2=10
+let media=2
+
+document.write('<p>'+(nota1+nota2) / media+'</p>');
+
+
+//Exercicio calculo + condição(3): criar 2 variaveis e forem iguais ser somados, senao multiplicados
+
+
+//exercicio 3
+
+let numero1= 2;
+let numero2= 3;
+
+if (numero1==numero2){
+    document.write('<p>'+numero1+numero2+'</p>');
+} else{document.write('<p>'+numero1*numero2+'</p>');}
+
+//Exercício prompt + if(4): Usuario deve informar a cidade. Cada if deve conter um valor diferente.
+
+//exercicio 4
+
+let cidade=window.prompt('Informe a cidade');
+
+
+
+if (cidade == 'blumenau'){
+    document.write( 'cidade da cerveja');
+}else if(cidade == 'Luiz Alves'){ 
+    document.write('cidade da cachaça');}else if( cidade == 'caxias'){
+        document.write('terra do vinho');
+    }else{document.write('cidade não encontrada')}
+
+
+
+
+
+
+    </script>
+</html>
