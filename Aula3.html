@@ -1,0 +1,83 @@
+<html>
+    <meta charset="UTF8">
+
+    <script>
+// Estudamos Run and Debug e sua funcionalidade como instrumento para encontrar erros nos códigos, com uso do Breackpoint(símbolo em vermelho na lateral esquerda).
+// Estudamos nessa aula conceito: Switch, While e suas funcionalidades;
+
+//Exercício(1): Fazer um sistema de voto usando o Swith + While. Candidatos: Lucas, Pamela, Diego. Abaixo Modelo:
+// estrutura necessária é a seguinte: 
+
+// passo1: Variável dos respectivos candidatos, contendo os seus valores + Uma variável referente ao Numero voto + Uma variável referente ao voto  
+
+// passo2: Operador While é acionado. Contém a ordem com operador matemático relacionado ao valor Numerovoto(<,>,+,-,==...)
+
+// passo3: (abrindo as chaves apos o while){ aciona o comando prompt(ou windows.prompt) com a string perguntando ao usuário "qual o seu candidato" 
+
+// passo4: operador Switch é acionado conendo o valor voto
+
+// passo5: em seguida dando sequência ao comando Switch(esse estando dentro do Operador While){
+
+// passo6: determino os comandos Case, contendo os cases dos candidatos com a seguinte estrutura:
+// case "candidatoFulano" : votoFulano++ (esse comando sendo repetido para cada variável candidato) depois desse processo fecham-se as chaves}
+
+// passo7: Numerovotos++, fecha as chaves do operador While}
+
+// passo8: document.write("<p>"+"Fulano tem"+ votosFulano + "</p>"). Uso para cada candidato.
+
+// Abaixo seguirá o exercício proposto em aula para medida de exemplo do passo a passo elaborado também
+var votosdiego = 0;
+    var votospamela = 0;
+    var votoslucas = 0;
+    var numerodevotos = 0;
+    var voto = "";
+    while (numerodevotos < 10){
+    voto = prompt("Em quem você vota?");
+    switch (voto) {
+        case "lucas":
+          votoslucas++;    
+        break;
+
+        case "pamela":
+          votospamela++;    
+        break;
+        
+        case "diego":
+          votosdiego++;     
+        break;        
+    }
+    numerodevotos++;
+}
+    document.write("Lucas tem "+votoslucas+"<br>");
+    document.write("Pamela tem "+votospamela+"<br>");
+    document.write("Diego tem "+votosdiego+"<br>")
+
+//treino com switch+if
+let pergunta = window.prompt('Para a votação defina seu número a partir de: 17-Lucas, 25-Pamela e 55-Diego') 
+pergunta=parseInt(pergunta)
+
+switch(pergunta) {
+    case 17:
+    document.write('<p>Voto computado com sucesso. O voto é seguro e secreto!</p>');
+    break;
+
+    case 25:
+        document.write('<p>Voto computado com sucesso. O voto é seguro e secreto!</p>');
+    break;
+
+    case 55: 
+    document.write('<p>Voto computado com sucesso. O voto é seguro e secreto!</p>');
+    break;
+ 
+    default:
+    document.write('Voto inexistente');
+      
+}  if(pergunta==17){
+            document.write( 'Seu candidato é o Lucas' );
+        } else if(pergunta==25){
+            document.write('Seu candidato é a Pamela');
+        }else if(pergunta==55){
+            document.write('Seu candidato é o Diego');
+        }
+    </script>
+</html>
