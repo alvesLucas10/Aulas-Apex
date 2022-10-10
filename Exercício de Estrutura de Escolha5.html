@@ -1,0 +1,33 @@
+<html>
+    <meta charset="UTF8">
+
+    <script>
+
+let horario=window.prompt("Informe horário local no Brasil")
+let pais=window.prompt("Informe o país")
+
+horario=parseInt(horario)
+
+switch(pais){
+
+    case "Inglatera":
+    document.write( horario + 10 + ' esse é o horario convergido ' )
+    break
+
+    case "Canada":
+    document.write( horario + 5 + '  esse é o horario convergido ')
+    break
+
+    case "Alaska":
+    document.write( horario + 9 + '  esse é o horario convergido ')
+    break
+
+    default:
+        document.write('Not found')
+    
+
+}
+
+
+    </script>
+</html>

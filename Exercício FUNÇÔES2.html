@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    
+
+<script>
+
+    //Criar uma agenda para manipular os dados: nome, e-mail, idade e cidade,
+    //essa agenda terá opções para cadastrar, alterar, selecionar e excluir
+    //contatos. Cada ação da agenda deverá estar em uma função.
+
+    
+    function reservaDados(){
+        
+        let nomear=document.getElementById("nomear").value
+        let name=nomear
+
+            
+        let adressE=document.getElementById("adressE").value
+        let email=adressE
+
+           
+
+        let anos= document.getElementById("anos").value
+        let idade=anos
+
+            
+
+        let moradia= document.getElementById("moradia").value
+        let cidade= moradia
+            
+            
+
+
+            document.write( "<p>" + " Nome: " + name +"</p>")
+          
+       
+            document.write("<p>" + "E-mail: " + email +"</p>")
+          
+
+            document.write("<p>" + " Idade: " +  idade + "</p>")
+         
+
+            document.write( "<p>" + "Cidade: " + cidade + "</p>")
+            
+            
+        
+    }
+    
+    </script>
+
+
+
+</head>
+<body>
+    <form >
+    <input type="text" placeholder="Qual seu nome" id="nomear">
+    <input type="text" placeholder="Qual seu e-mail" id="adressE">
+    <input type="text" placeholder="Qual sua idade" id="anos">
+    <input type="text" placeholder="Qual sua cidade" id="moradia">
+
+    
+    <input type="button" value="Cadastrar" onclick="reservaDados()">
+     
+</form>
+
+<form>
+
+
+    <input type="button" value="Alterar" onclick="alteraDados()">
+    
+
+
+</form>
+   
+<form >
+<input type="button" value="Selecionar" onclick="reservaDados()">
+
+</form>
+
+<form >
+
+    <input type="button" value="Excluir" onclick="reservaDados()">
+
+</form>
+
+
+
+</body>
+</html>

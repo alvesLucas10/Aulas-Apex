@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+let dados = [
+[('Medicina '),325],
+[('Psicologia '),510],
+[('Engenharia Civil '),255],
+[('Enfermagem ') ,175],
+[('Ed. física '),205]
+]
+
+
+
+for (let linha = 0; linha < dados.length; linha++) {
+    for (let coluna = 0; coluna < dados[linha].length ; coluna++) {
+     if(dados[linha][coluna] < 200){
+        document.write(dados[linha]+[coluna] + '  Essa é a turma com o menor numero de integrantes')
+       }
+       if(dados[linha][coluna] > 500){
+        document.write(dados[linha]+ '  é a turma com o maior numero de integrantes com' + [coluna]  )
+       }
+    }
+    
+    document.write( '<p>')
+}
+
+
+
+
+
+</script>
+
+
+
+
+</head>
+<body>
+    
+</body>
+</html>

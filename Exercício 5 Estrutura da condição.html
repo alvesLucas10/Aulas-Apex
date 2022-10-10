@@ -1,0 +1,17 @@
+<html>
+    <meta charset="UTF8">
+
+    <script>
+
+let direito = window.prompt('Informe medida do lado direito') 
+let inferior = window.prompt('Informe medida inferior')
+let esquerdo = window.prompt('Informe medida esquerda')
+
+direito = parseInt(direito)
+inferior = parseInt(inferior)
+esquerdo = parseInt(esquerdo)
+
+if(direito==esquerdo&&direito!=inferior){document.write('Isoceles')}else if(direito!=inferior && inferior!=esquerdo){document.write('Escaleno')}else if(direito==esquerdo && esquerdo==inferior){document.write('Equilatero')}else{document.write('Triangulo inexistente')}
+    </script>
+
+</html>

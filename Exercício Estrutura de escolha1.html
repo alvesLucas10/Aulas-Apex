@@ -1,0 +1,31 @@
+<html>
+    <meta charset="UTF8">
+    <script>
+
+let conversor=window.prompt('Selecione o conversor de temperatura'+' 1-Celsius '+' 2-Fahrenheit ')
+let temperatura=window.prompt(' Informe a temperatura para converção ')
+
+
+temperatura=parseInt(temperatura)
+conversor=parseInt(conversor)
+
+
+let celcius=5
+let fahrenehit=10
+
+
+switch(conversor){
+
+    case 1:
+        document.write(temperatura * celcius + ' Essa é a temperatura convergida em celsius ')
+break
+    case 2:
+        document.write(temperatura * fahrenehit + ' Essa é a temperatura convergida em fahrenheit ')   
+break 
+}
+
+
+
+
+    </script>
+</html>

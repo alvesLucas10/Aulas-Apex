@@ -1,0 +1,27 @@
+<html>
+    <meta charset="UTF8">
+<script>
+
+let produtos = window.prompt('Informe o código do produto')
+let valor = window.prompt('Informe valor do pagamento')
+
+let produtos1=12
+let produtos2=4
+let produtos3=16
+
+
+produtos=parseInt(produtos)
+
+valor=parseInt(valor)
+
+
+if(produtos==1 && valor >= produtos1){document.write(valor - produtos1   +  ' Esse é seu troco ' + '<p>Pizza = R$12,00</p>')}else if(produtos==2 && valor >= produtos2) {document.write(valor - produtos2 + ' Esse é seu troco ' + '<p>Pão de queijo = R$4,00</p>')} else if(produtos==3 && valor >= produtos3){document.write(valor-produtos3 + ' Esse é seu troco ' + '<p>Macarrão = R$16,00</p>')} else{document.write('<p>Valor insuficiente!</p>' + 'Ou produto Inexistente')}
+
+
+
+
+
+
+</script>
+
+</html>

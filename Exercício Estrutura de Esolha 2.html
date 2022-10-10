@@ -1,0 +1,34 @@
+<html>
+    <meta charset="UTF8">
+
+    <script>
+
+let Modulo=window.prompt('Selecione módulo de conversão:' + '<p>1-Real_Dólar</p>' + '2-<p>Dólar_Real</p>' + '3- <p>Euro_Real</p>')
+let conversor=window.prompt(' Informe valor para a coversão ')
+
+conversor=parseInt(conversor)
+Modulo=parseInt(Modulo)
+
+let real=5
+
+let dolar=7
+
+let euro=6
+
+
+switch(Modulo){
+
+    case 1:
+        document.write(conversor/dolar + '  Esse é o valor convergido!  ')
+        break
+    
+    case 2:
+        document.write(conversor*real + '  Esse é o valor convergido!  ')    
+        break
+    case 3:
+        document.write(conversor*real + '  Esse é o valor convergido!  ')   
+        break 
+}
+
+    </script>
+</html>

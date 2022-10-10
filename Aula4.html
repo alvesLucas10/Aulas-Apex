@@ -1,0 +1,64 @@
+<html>
+    <meta charset="UTF8">
+    <script>
+
+
+//Nessa aula estudaremos os laços de repetição usos de While e Do While(similar à uma tentativa de Login. Caso não haja validação do usuário volta para verificar quem é.)
+//Laço FOR (Uso do FOR LOOP abaixo, aciona for seta para baixo seleciona for loop. Serve para facilitar a execução do modelo de FOR.) Usado para manipular principalmente listas,
+
+ //for (let index = 0; index < array.length; index++) {
+ //   const element = array[index];}
+
+// Exercício de tabuada com prompt no FOR (no cas de não usar vetor elimina alguns elemento do FOR LOOP)
+
+//let indexx= window.prompt('Informe numero para multiplicação');
+//indexx=parseInt(indexx);
+
+//for ( let index=1 ; index <= 10  ; index++) {
+
+ //   document.write(index*indexx+'<br>');   
+    
+// }
+
+//VETORES, trabalha com coluna e linhas
+//Ao usar nomes.lenght ele começa a contagem pelo 0, e não pelo 1. Exemplo: quand puxo um nome e quero o primeiro devo digitar o '0'.
+//array=nome nos exemplos. É o termo usado para designar o elemento VETOR
+
+//Exercicio com VETOR
+
+//let names = ['Lucas','Luana','Roberta']
+//for (let indexxx = 0; indexxx < names.length; indexxx++) {
+//    document.write('<p>' +indexxx+ names[indexxx] + '</p>')
+    
+//}
+
+//Criar um programa usando um laço de repetição coletar 5 nomes e remover o ultimo, e substituir o primeiro
+//INDEX='passada, ou ordem', 'Puxador de ordem'
+
+let cities=[]
+
+for (let index1 = 0; index1 < 5; index1++) {
+
+    let novacidade= prompt('Informe 5 cidades');
+    cities.push (novacidade)
+    
+
+}
+document.write(cities + '<br>')
+
+cities.splice (4,1)
+document.write(cities + '<br>')
+
+cities[0]='Laguna'
+document.write(cities + '<br')
+
+
+
+
+
+
+
+
+
+    </script>
+</html>

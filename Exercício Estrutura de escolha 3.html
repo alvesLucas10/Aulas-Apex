@@ -1,0 +1,35 @@
+<html>
+    <meta charset="UTF8">
+
+    <script>
+
+let produto=window.prompt(' Informe o produto ')
+let valor=window.prompt(' Informe o valor ')
+let segmento=window.prompt(' Qual o segmento? 1-vestuario  2-alimenticio  3-eletronico ')
+
+
+
+
+segmento=parseInt(segmento)
+produto=parseInt(produto)
+valor=parseInt(valor)
+
+switch(segmento) {
+
+    case 1:
+        document.write(valor * 0,05 +' Seu desconto ' )
+        break
+        
+    case 2:
+          document.write(valor * 0,08 + ' Seu desconto2 ' )
+        break
+    
+    case 3: 
+    document.write(valor * 0,10 + ' Seu desconto3 ')}
+        
+    
+
+
+
+    </script>
+</html>
